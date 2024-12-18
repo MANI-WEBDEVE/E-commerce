@@ -34,7 +34,8 @@
   }
   
   @import "admin-styles/mixin";
-  
+  @import "home-page";
+
   @import "admin-styles/dashboard.scss";
   @import "admin-styles/products";
   @import "admin-styles/chart";
@@ -62,10 +63,34 @@
       border-radius: 5px;
       border: none;
     }
+    dialog{
+      width: 100px;
+      background-color: #8d8d8d1a;
+       border:none;
+       padding: 1rem 1.5rem;
+       border-radius: 5px;
+       position: absolute;
+       top: 8%;
+       left: calc(100% - 100px);
+       margin: 0 2rem 0 -13px;
+       > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+         > a{
+           font-size: 13px;
+        }
+       }
+    }
    
 
   }
+  .header-1{
+    text-transform: uppercase;
+    font-size: 1.2rem;
 
+  }
 
   .header-2{
     display: flex;
@@ -77,6 +102,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      >h5{
+        font-size: 1rem;
+        font-weight: 400;
+      }
     }
   }
 

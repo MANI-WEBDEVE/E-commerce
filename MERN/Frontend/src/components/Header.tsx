@@ -16,14 +16,14 @@ const Header = () => {
   return (
     <nav className="header">
       <div className="header-1">
-        <h1>Logo</h1>
+        <h1 onClick={() => setIsOpen(false)}>Logo</h1>
       </div>
       <div className="header-2">
-        <Link to={"/"}>Home</Link>
-        <Link to={"/seacrh"}>
+        <Link to={"/"} onClick={() => setIsOpen(false)}><h5>Home</h5></Link>
+        <Link to={"/seacrh"} onClick={() => setIsOpen(false)}>
           <LuSearch />
         </Link>
-        <Link to={"/cart"}>
+        <Link to={"/cart"} onClick={() => setIsOpen(false)}>
           <PiShoppingCart />
         </Link>
 
@@ -36,11 +36,11 @@ const Header = () => {
               <div>
                 {user.role === "admin" && (
                   <>
-                    <Link to={"/admin/dashboard"}>Dashboard</Link>
+                    <Link to={"/admin/dashboard"} onClick={() => setIsOpen(false)}>Dashboard</Link>
                   </>
                 )}
-                <Link to={"/order"}>Order</Link>
-                <Link to={"#"}>
+                <Link to={"/order"} onClick={() => setIsOpen(false)}>Order</Link>
+                <Link to={"#"} >
                   Logout <PiSignOutBold />
                 </Link>
               </div>
