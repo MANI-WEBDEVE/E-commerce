@@ -19,7 +19,7 @@ const Header = () => {
         <h1 onClick={() => setIsOpen(false)}>Logo</h1>
       </div>
       <div className="header-2">
-        <Link to={"/"} onClick={() => setIsOpen(false)}><h5>Home</h5></Link>
+        <Link to={"/"} onClick={() => setIsOpen(false)}><h5>HOME</h5></Link>
         <Link to={"/seacrh"} onClick={() => setIsOpen(false)}>
           <LuSearch />
         </Link>

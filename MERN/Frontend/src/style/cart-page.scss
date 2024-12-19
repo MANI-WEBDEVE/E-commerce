@@ -24,7 +24,21 @@
             padding: 1rem;
             border: 1px solid rgba(0, 0, 0, 0.359);
             outline: none;
-            border-radius: 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+        >button{
+            background-color: $color3;
+            color: white;
+            border:none;
+            padding: 0.8rem 0;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                scale: 1.1;
+            }
         }
     }   
 }
@@ -35,7 +49,7 @@
     padding: 1rem 5rem 0rem; 
 }
 .cart-item{
-    background-color: rgba(124, 122, 122, 0.178);
+    background-color: rgba(1, 1, 1, 0.092);
     display: flex ;
     gap: 2rem;
     padding: 1rem 2rem;
@@ -68,6 +82,14 @@
             border: 1px solid black;
             border-radius: 3px;
             font-size: 1rem;
+            cursor: pointer;
+            background-color: transparent;
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                scale: 1.1;
+                background-color: black;
+                color: white;
+            }
         }
     }
     > button{
@@ -75,7 +97,7 @@
         padding: 0.4rem 1rem;
         font-size: 1rem;
         border:none;
-        
+        background-color: transparent;
         &:hover{
             color:red
         }

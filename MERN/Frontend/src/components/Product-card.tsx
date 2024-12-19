@@ -15,7 +15,7 @@ const ProductCard = ({productId, name, photo, price, stock, handler} : ProductPr
 
   return (
     <>
-  {Array.from({length: 10},(_:null, index:number) => (
+  {Array.from({length: 2},(_:null, index:number) => (
     <div className="product-card" key={index}>
       <img src={photo} alt={name} />
       <h3>{name}</h3>

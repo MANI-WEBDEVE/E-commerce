@@ -9,20 +9,7 @@ const CartItemData = [
     price: 2000,
     quantity: 1
   },
-  {
-    productId: 1,
-    name: "Mac Book",
-    photo: "https://m.media-amazon.com/images/I/514T0SvwkHL._SL1500_.jpg",
-    price: 2000,
-    quantity: 1
-  },
-  {
-    productId: 1,
-    name: "Mac Book",
-    photo: "https://m.media-amazon.com/images/I/514T0SvwkHL._SL1500_.jpg",
-    price: 2000,
-    quantity: 1
-  },
+  
   
 ]
 
@@ -80,7 +67,7 @@ const Cart = () => {
             <span className="red">Invalid Coupon Code </span>
           )
         )}
-
+        <button>Apply</button>
       </aside>
     </div>
     </>
