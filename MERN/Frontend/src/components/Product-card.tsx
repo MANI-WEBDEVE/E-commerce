@@ -14,17 +14,18 @@ type ProductProps = {
 const ProductCard = ({productId, name, photo, price, stock, handler} : ProductProps) => {
 
   return (
-    <div className="product-card">
-      <img src={photo} alt="product-card-image" />
-      <p>{name}</p>
-      <span>{price}</span>
+    <>
+  {Array.from({length: 10},(_:null, index:number) => (
+    <div className="product-card" key={index}>
+      <img src={photo} alt={name} />
+      <h3>{name}</h3>
+      <p>{price}</p>
       <div>
-        <button onClick={()=>handler()}>
-            <FaPlus />
-        </button>
+        <button onClick={()=>handler()}><FaPlus/></button>
       </div>
     </div>
-  )
+  ))}
+</>  )
 }
 
 export default ProductCard

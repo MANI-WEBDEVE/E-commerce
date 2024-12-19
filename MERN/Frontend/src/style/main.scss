@@ -35,7 +35,7 @@
   
   @import "admin-styles/mixin";
   @import "home-page";
-
+  @import "cart-page";
   @import "admin-styles/dashboard.scss";
   @import "admin-styles/products";
   @import "admin-styles/chart";
@@ -65,7 +65,7 @@
     }
     dialog{
       width: 100px;
-      background-color: #8d8d8d1a;
+      background-color: #8d8d8d73;
        border:none;
        padding: 1rem 1.5rem;
        border-radius: 5px;
@@ -73,6 +73,7 @@
        top: 8%;
        left: calc(100% - 100px);
        margin: 0 2rem 0 -13px;
+       
        > div {
         display: flex;
         align-items: center;
@@ -80,6 +81,7 @@
         flex-direction: column;
          > a{
            font-size: 13px;
+           color: white;
         }
        }
     }

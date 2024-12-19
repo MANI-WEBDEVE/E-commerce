@@ -15,7 +15,7 @@ const Home = () => {
     <Link to={"/search"}>More</Link>
     </section>
 
-    <main>
+    <main className="product-container">
       <ProductCard name="Mac Book" photo="https://m.media-amazon.com/images/I/514T0SvwkHL._SL1500_.jpg"
       price={2000}
       stock={20}
