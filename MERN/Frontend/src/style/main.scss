@@ -33,8 +33,10 @@
     color: rgb(0, 195, 0);
   }
   
-  @import "admin-styles/mixin";
+  @import  "admin-styles/mixin.scss";
+
   @import "home-page";
+  @import "login-page";
   @import "cart-page";
   @import "shipping-page";
   @import "admin-styles/dashboard.scss";
@@ -86,7 +88,14 @@
         }
        }
     }
-   
+   .login-button > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight:600;
+   }
 
   }
   .header-1{

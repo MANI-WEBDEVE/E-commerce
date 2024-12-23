@@ -9,7 +9,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const user: { _id: string; role: string } = {
-    _id: "s",
+    _id: "",
     role: "user",
   };
 
@@ -48,8 +48,8 @@ const Header = () => {
           </>
         ) : (
           <>
-            <button>
-              Login <CgLogIn />
+            <button className="login-button" >
+              <Link to={"/login"}>Login <CgLogIn /></Link>
             </button>
           </>
         )}

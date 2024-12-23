@@ -1,0 +1,100 @@
+.login {
+    padding: 1rem 4rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > main > h1 {
+    font-size: 3rem !important;
+    margin-bottom: 1rem;
+    text-align: center;
+    @include heading(2px);
+  }
+  > main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+    background-color: rgba(75, 73, 73, 0.045);
+    padding: 3.5rem 3.5rem;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 23px rgba(0, 0, 0, 0.401);
+  }
+  .login-input-gender {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    > label {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    > select {
+      padding: 0.5rem 5rem 0.5rem 0.5rem;
+      border-radius: 0.2rem;
+      border: 1px solid #ccc;
+      font-size: 0.8rem;
+      font-weight: 500;
+      outline: none;
+      &:focus {
+        border: 1px solid #000;
+      }
+    }
+  }
+  .login-input-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    > label {
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+    > input {
+      padding: 0.5rem 6.7rem 0.5rem 0.5rem;
+      border-radius: 0.2rem;
+      border: 1px solid #ccc;
+      font-size: 0.8rem;
+      font-weight: 500;
+      outline: none;
+      &:focus {
+        border: 1px solid #000;
+      }
+    }
+  }
+  .login-btn {
+    padding: 0.5rem 1.5rem;
+    > p {
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+      color: #134fc7;
+    }
+    > button {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    background-color: #134fc7;
+color: white;
+text-transform: uppercase;
+    gap: 2.5rem;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+      border-radius: 0.2rem;
+      border: none;
+      margin-top: 1rem;
+      > svg {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+      }
+      >span{
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
