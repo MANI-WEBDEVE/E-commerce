@@ -20,7 +20,7 @@ const Header = () => {
       </div>
       <div className="header-2">
         <Link to={"/"} onClick={() => setIsOpen(false)}><h5>HOME</h5></Link>
-        <Link to={"/seacrh"} onClick={() => setIsOpen(false)}>
+        <Link to={"/search"} onClick={() => setIsOpen(false)}>
           <LuSearch />
         </Link>
         <Link to={"/cart"} onClick={() => setIsOpen(false)}>

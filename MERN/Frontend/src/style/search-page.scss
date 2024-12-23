@@ -1,0 +1,115 @@
+.product-search-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 2rem 0rem;
+  gap: 1rem;
+  > aside {
+    padding: 2rem 3rem;
+    background-color: rgba(8, 8, 8, 0.102);
+    margin: 1rem 1rem;  
+    border-radius: 0.3rem;
+    > h2 {
+      @include heading(2rem);
+      letter-spacing: 3px;
+      font-size: 2rem;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: 1rem 0rem;
+      input {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 0.5rem;
+        border-radius: 0.3rem;
+        background: #191919;
+        outline: none;
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 50%;
+          background: #ffffff;
+          cursor: pointer;
+          border: 2px solid #000000;
+        }
+
+        &::-moz-range-thumb {
+          width: 1.2rem;
+          height: 1.2rem;
+          border-radius: 50%;
+          background: #ffffff;
+          cursor: pointer;
+          border: 2px solid #000000;
+        }
+      }
+      select {
+        padding: 0.5rem 1rem;
+        border: 1px solid black;
+        border-radius: 0.3rem;
+        
+        option {
+          padding: 0.3rem;
+          background-color: white;
+          color: black;
+          font-size: 1rem;
+
+          &:hover {
+            background-color: #433d3d;
+          }
+
+          &:checked {
+            background-color: #e0e0e0;
+          }
+        }
+      }
+      > h2 {
+        @include heading(1.5rem);
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  >main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    >.product-search-header{
+        display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        flex-direction: column;
+        >h2{
+            @include heading(2rem);
+            letter-spacing: 3px;
+            font-size: 2rem;    
+        }
+        >input{
+            width: 50%;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.116);
+            border-radius: 0.3rem;
+            margin-top: 1rem;
+        }
+    }
+    .product-container-list{
+        display: flex;
+        flex: wrap;
+        justify-content: start  ;
+        gap: 1rem;
+    }
+    >article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+  }
+}
